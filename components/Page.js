@@ -48,8 +48,10 @@ const GlobalStyle = createGlobalStyle`
     text-decoration: none;
     color: ${theme.black}
   }
-  ul, li {
+  ul, li, h1,h2,h3,h4,p {
     padding: 0;
+    margin: 0;
+    list-style-type: none;
   }
   .button {
     background: orange;

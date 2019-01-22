@@ -7,6 +7,7 @@ const PagePickerStyles = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
+  margin-bottom: 25px;
   a {
     font-family: 'Gloria Hallelujah', cursive;
     background: orange;
@@ -27,14 +28,14 @@ class PagePicker extends React.Component {
     return (
       <PagePickerStyles>
         <Link href={{
-          pathname: '/characters',
+          pathname: `/${this.props.category}`,
           query: {page: pageNum - 1}
         }}>
           <a className='button' aria-disabled={pageNum <= 1}>Prev</a>
         </Link>
         <p>page {pageNum} of {this.props.pageCount}</p>
         <Link href={{
-          pathname: '/characters',
+          pathname: `/${this.props.category}`,
           query: {page: pageNum + 1}
         }}>
           <a className='button' aria-disabled={pageNum >= this.props.pageCount}>Next</a>

@@ -7,9 +7,9 @@ import { parse, stringify } from 'query-string'
 
 const CharactersPage = props => (
   <>
-  <PagePicker pageCount={props.characters.info.pages} page={stringify(props.query)}/>
+  <PagePicker category='characters' pageCount={props.characters.info.pages} page={stringify(props.query)}/>
   <Characters characters={props.characters.results}/>
-  <PagePicker pageCount={props.characters.info.pages} page={stringify(props.query)}/>
+  <PagePicker category='characters' pageCount={props.characters.info.pages} page={stringify(props.query)}/>
   </>
 )
 
