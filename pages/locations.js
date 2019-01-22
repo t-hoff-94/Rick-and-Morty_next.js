@@ -8,6 +8,7 @@ import { parse, stringify } from 'query-string'
 
 const LocationsPage = props => console.log(props)||(
   <>
+  <h1 style={{textAlign: 'center', marginBottom: 25}}>Locations explored by Rick and Morty</h1>
   <PagePicker category='locations' pageCount={props.locations.info.pages} page={stringify(props.query)}/>
   <Locations locations={props.locations}/>
   <PagePicker category='locations' pageCount={props.locations.info.pages} page={stringify(props.query)}/>

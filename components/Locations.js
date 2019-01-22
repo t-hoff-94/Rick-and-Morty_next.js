@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import slug from 'slug'
 import styled from 'styled-components'
+import Link from 'next/link'
 
 const LocationsStyles = styled.div`
   align-items: center;
@@ -11,6 +12,10 @@ const LocationsStyles = styled.div`
   padding: 0 15px;
   max-width: 777px;
   margin: 0 auto;
+  a {
+    color: ${props => props.theme.teal};
+    text-decoration: underline;
+  }
   .info {
     display: flex;
     justify-content: space-between;
@@ -27,7 +32,12 @@ class Locations extends Component {
       {locations.map(location => (
         <li style={{marginBottom: 15}} key={location.id}>
           <LocationsStyles>
-            <h3>{location.name}</h3>
+            <Link href={{
+              pathname: '/location',
+              query: {id: location.id}
+            }}>
+              <a><h3>{location.name}</h3></a>
+            </Link>
             <div className='info'>
               <p>{location.type}</p>
               <p>{location.dimension}</p>
