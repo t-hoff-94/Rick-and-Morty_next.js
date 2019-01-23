@@ -6,6 +6,8 @@ Find the most recent version of this guide at [here](https://github.com/segmenti
 
 You can run the Rick and Morty project in a local environment by cloning this Repo, installing the dependencies, and running the command 'npm run dev'.
 
+Logo: ![Alt](/test.jpg "Title")
+
 # Rick and Morty meets Next.js
 
 As i'm beginning to get more comfortable with using React, I wanted to start building more projects to strengthen my skills and just for the fun of it, which led me to building the Rick and Morty App.
