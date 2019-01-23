@@ -1,10 +1,8 @@
 import React from 'react'
-import Link from 'next/link'
 import fetch from 'isomorphic-fetch'
-import Characters from '../components/Characters'
 import Locations from '../components/Locations'
 import PagePicker from '../components/PagePicker'
-import { parse, stringify } from 'query-string'
+import { stringify } from 'query-string'
 
 const LocationsPage = props => console.log(props)||(
   <>

@@ -37,7 +37,7 @@ class Location extends Component {
     const characterString = this.props.location[0].residents.map(string => {
       return  string.split('/').slice(5).join('');
     })
-    const res = await fetch(`https://rickandmortyapi.com/api/character/${characterString}`).catch(err=> console.log(err));
+    const res = await fetch(`https://rickandmortyapi.com/api/character/${characterString}`);
     const residents = await res.json();
     console.log(Array.isArray(residents))
     if(!Array.isArray(residents)) {
@@ -45,14 +45,12 @@ class Location extends Component {
     } else {
       this.setState(()=>({ residents , loading: false}));
     }
-    console.log(this.state)
   }
 
   render() {
     const location = this.props.location[0];
     return (
       <LocationStyles>
-      <p>test</p>
         <h1>{location.name}</h1>
         <ul>
           <li>
