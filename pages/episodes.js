@@ -7,7 +7,9 @@ import { stringify } from 'query-string'
 const EpisodesPage = props => console.log(props)||(
   <>
   <h1 style={{textAlign: 'center', marginBottom: 25}}>Rick and Morty Episodes</h1>
+  <PagePicker category='episodes' page={stringify(props.query)} pageCount={props.episodes.info.pages} />
   <Episodes episodes={props.episodes}/>
+  <PagePicker category='episodes' page={stringify(props.query)} pageCount={props.episodes.info.pages} />
   </>
 )
 

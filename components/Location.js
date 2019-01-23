@@ -60,7 +60,7 @@ class Location extends Component {
             <h2>Type:<span>{location.type}</span></h2>
           </li>
         </ul>
-        <h3>Some of the residents from {location.name}</h3>
+        <h3>Some of the residents from "{location.name}"</h3>
         {this.state.loading ? <p>loading</p> : <Characters characters={this.state.residents}/>}
       </LocationStyles>
     )
