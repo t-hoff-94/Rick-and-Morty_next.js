@@ -6,7 +6,7 @@ Find the most recent version of this guide at [here](https://github.com/segmenti
 
 You can run the Rick and Morty project in a local environment by cloning this Repo, installing the dependencies, and running the command 'npm run dev'.
 
-Logo: ![Alt](/test.jpg "Title")
+![Rick and Morty home page](/rickandmorty-home.jpg "Rick and Morty Home Page")
 
 # Rick and Morty meets Next.js
 
@@ -14,12 +14,17 @@ As i'm beginning to get more comfortable with using React, I wanted to start bui
 
 ## Project Goals
 
-I wanted to have a project where I could just experiment with different tools, and strengthen some skills that I thought would be useful in real world situations.
+I decided to work on a project where I could just experiment with different tools, and strengthen some skills that I thought would be useful in real world situations.
 
 - Connect to an external API and display data to user.
 - Implement pagination and handle route changes that could also receive query parameters.
-- Have a loading component to signal page loads on route changes. For this I used NProgress.
+- Have a loading component to signal page loads on route changes, for this I used NProgress.
 - Make the app responsive to read well on all devices.
+- Create several pages to organize things for the user.
+
+##### The Rick and Morty API
+
+I decided to use the Rick and Morty API because I thought it was funny and it was really easy to use as it doesn't require a key. It ended up being really useful to practice fetching data and displaying different components to the user, such as different characters, episodes, and locations from the show.
 
 ### Why I chose Next.js
 

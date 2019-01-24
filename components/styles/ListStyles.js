@@ -3,7 +3,6 @@ import styled from 'styled-components'
  const ListStyles = styled.div`
   border-radius: 10px;
   background: #f3f3f3;
-  padding: 5px;
   border: 2px solid orange;
   box-shadow: 5px 5px 9px 1px rgba(0,0,0,0.3);
   align-items: center;
@@ -11,7 +10,7 @@ import styled from 'styled-components'
   display: flex;
   flex-direction: column;
   justify-content: center;
-  padding: 0 15px;
+  padding: 5px 15px;
   max-width: 777px;
   margin: 0 auto;
   transition: all .5s;

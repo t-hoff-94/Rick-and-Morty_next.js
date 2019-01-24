@@ -18,8 +18,8 @@ class Locations extends Component {
               <a><h3>{location.name}</h3></a>
             </Link>
             <div className='info'>
-              <p>{location.type}</p>
-              <p>{location.dimension}</p>
+              <p><span>Type:</span>{location.type}</p>
+              <p><span>Dimension:</span>{location.dimension}</p>
             </div>
           </ListStyles>
         </li>

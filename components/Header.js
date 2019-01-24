@@ -16,6 +16,10 @@ Router.onRouteChangeError = () => {
 }
 
 const HeaderStyles = styled.header`
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  padding: 15px;
   #hero {
     display: flex;
     margin: 0 auto;
